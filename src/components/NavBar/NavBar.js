@@ -6,7 +6,7 @@ import './NavBar.css'
 const NavBar = () => {
     return(
         <nav style={{ backgroundColor: '#5d8704', display: 'flex', justifyContent: 'space-around', alignItems: 'center', padding: '2vh' }}>
-            <img src={mainLogo} alt="Good Morning!" />
+            <Link to='/'> <img src={mainLogo} alt="Good Morning!"></img></Link>
             <div>
                 <Link to='/category/televisores' className="mi-enlace"> Smart TVs ·</Link>
                 <Link to='/category/audio'className="mi-enlace"> Sistemas de Audio ·</Link>
