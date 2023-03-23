@@ -10,11 +10,11 @@ const ItemDetail = ({ id, name, img, price, stock, description}) => {
     }
 
     return (
-        <div>
+        <div className="text-style">
                 <h2>{name}</h2>
-                <img src={img} alt={name} style={{ width:250 }}/>
-                <p>Precio: ${price}</p>
-                <p>Stock: {stock}</p>
+                <img src={img} alt={name} style={{ width:400 }}/>
+                <h2>Precio: ${price}</h2>
+                <h3>Stock: {stock}</h3>
                 <p>Descripción: {description}</p>
                 <ItemCount stock={stock} onAdd={handleOnAdd}/>     
         </div>

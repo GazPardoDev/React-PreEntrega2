@@ -30,7 +30,7 @@ const ItemListContainer = ({ greeting }) => {
                 return (
                     <div key={prod.id}>
                         <h3>{prod.name}</h3>
-                        <Link to={`/item/${prod.id}`}>VER DETALLE</Link>
+                        <Link to={`/item/${prod.id}`} className="mi-otro-enlace">VER DETALLE</Link>
                     </div>
                 )}
             )}       

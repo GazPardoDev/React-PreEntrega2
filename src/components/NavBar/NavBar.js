@@ -8,9 +8,9 @@ const NavBar = () => {
         <nav style={{ backgroundColor: '#5d8704', display: 'flex', justifyContent: 'space-around', alignItems: 'center', padding: '2vh' }}>
             <img src={mainLogo} alt="Good Morning!" />
             <div>
-                <Link to='/category/televisores'>Smart TVs</Link>
-                <Link to='/category/audio'>Sistemas de Audio</Link>
-                <Link to='/category/camaras'>Cámaras Digitales</Link>
+                <Link to='/category/televisores' className="mi-enlace"> Smart TVs ·</Link>
+                <Link to='/category/audio'className="mi-enlace"> Sistemas de Audio ·</Link>
+                <Link to='/category/camaras' className="mi-enlace"> Cámaras Digitales </Link>
             </div>
             <CartWidget />
         </nav>
